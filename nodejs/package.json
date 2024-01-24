@@ -1,0 +1,26 @@
+{
+  
+  "name": "nodejs-docker-example",
+  "version": "1.0.0",
+  "description": "deploying a node app to docker",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DidIrb/docker-tutorial.git"
+  },
+  "author": "didirb",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DidIrb/docker-tutorial/issues"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  },
+  "homepage": "https://github.com/DidIrb/docker-tutorial#readme"
+}
