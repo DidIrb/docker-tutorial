@@ -1,0 +1,25 @@
+# Defining the Parent Image
+FROM node:20-alpine 
+
+# Specify workign Directory
+WORKDIR /app 
+
+# Copy your code
+COPY . .
+
+# Changed the file location so this changed
+# COPY ./nodejs .
+# In this example the file is not in the root
+# ./nodejs = File to copy from
+# . = File to copy to - this is relative to the working directory Which is ./app
+
+# COMAND TO RUN ONCE YOUR CODE IS COPIED OVER
+RUN npm install 
+
+# EXPOSE PORT FOR DOCKER DESKTOP
+EXPOSE 4000
+
+# COMAND TO RUN IN THE CONTAINER
+
+CMD ["npm", "run", "dev"]
+
